@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+ <html lang="es-es">
+
+
+<head>
+<meta de caracteres meta="utf-8">
+
+
+<title>Juego de adivinanzas</title>
+<link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+<h1>Juego de adivinanzas</h1>
+
+<img src="img/logo.jpg" alt="imagen">
+
+<p>Hemos seleccionado un número aleatorio entre 1 y 100. Vea si puede adivinarlo en 10 turnos o menos. Le diremos si su conjetura fue demasiado alta o demasiado baja.</p>
+<div class="Intentos">
+    <div id="display-resultado" style="height: 20px;"></div>
+</div>
+<div clase="form">
+<label for="campo_num">Ingrese el numero: </label>
+<input type="number" min="1" max="100" required id="campo_num" class="campo_num">
+<input type="submit" value="PROBAR NUMERO" class="btn_probar_num">
+
+</div>
+
+<div class="div_result">
+<p class="num_ingresados"></p>
+<p class="ultimoResult"></p>
+<p class="pistas"></p>
+</div>
+</body>
+<script src="script/main.js"></script>
+</html>
